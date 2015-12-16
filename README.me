@@ -1,0 +1,41 @@
+Manifesto Tech Test!
+
+
+To run the entire unit test
+
+
+$ mvn test
+
+This command will run 6 tests
+
+
+1) The ATM cannot dispense more money than it holds: testAtmNoFunds
+
+$ mvn -Dtest=AppTest#testAtmNoFunds test
+
+2) The customer cannot withdraw more funds then they have access to: testAccountNoFunds
+
+$ mvn -Dtest=AppTest#testAccountNoFunds test
+
+
+3) The ATM should not dispense funds if the pin is incorrect
+
+$  mvn -Dtest=AppTest#testAccountWrongPin test
+
+
+4) Test Input Data 1
+
+$ mvn -Dtest=AppTest#testDataFirst test
+
+
+
+5) Test Input Data 2
+
+$ mvn -Dtest=AppTest#testDataSecond test
+
+
+
+6) Test Input Data 3
+
+$ mvn -Dtest=AppTest#testDataThird test
+
